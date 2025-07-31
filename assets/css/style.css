@@ -1,0 +1,300 @@
+/* 
+    Pembrokeshire Porc Penfro
+    -------------------------
+
+*/
+
+
+/* SITE FONTS */
+/* @import url('https://fonts.googleapis.com/css2?family=Alice&family=Playfair+Display:wght@400;500&display=swap'); */
+
+body {
+    background-color: #f1ecde;
+    display: inline-block;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Rockwell', 'Playfair Display', serif;
+    color: #7B2D26;
+}
+
+.h2 {
+    font-size: 1em;
+}
+
+
+p {
+    font-family: 'Alegreya', 'Alice', serif;
+    font-size: 1.2em;
+}
+
+
+#site-heading {
+    margin: 0px;
+}
+
+.site-header {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #7B2D26;
+    /* text-transform: uppercase; */
+    margin: 20px 0px;
+}
+
+.site-text {
+    font-size: large;
+    font-weight: 400;
+}
+
+.page-section {
+    margin: 1rem 1rem;
+}
+
+.heading-image {
+    background: url("../images/gwaun-valley-fade.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 20vh;
+    max-height: 50vh;
+    width: 100vw;
+}
+
+/* .scanned-banner-image { */
+    /* background: url("../images/gwaun-valley-fade.jpg"); */
+    /* background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    /* min-height: 20vh;
+    max-height: 50vh; */
+/* } */
+
+
+.banner-logo {
+    min-height: 20vh;
+    max-height: 50vh;
+    /* background-color: rgba(248,248,250, 0.3); */
+    /* opacity: 1; */
+}
+
+.site-thumbnail {
+    min-height: 15vh;
+    max-height: 20vh;
+    width: auto;
+    /* padding-bottom: 1vh; */
+}
+
+.full-width-element {
+    margin: 20px 0px;
+}
+
+.divider-field {
+    background: url("../images/field-clouds.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* opacity: 0.8; */
+    min-height: 20vh;
+    max-height: 30vh;
+}
+
+.divider-corn {
+    background: url("../images/corn-field.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* opacity: 0.8; */
+    min-height: 20vh;
+    max-height: 30vh;
+}
+
+.divider-pigs {
+    background: url("../images/pigs-yard.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* opacity: 0.8; */
+    min-height: 20vh;
+    max-height: 30vh;
+}
+
+.about-us {
+    display: flex;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+#further-info {
+    font-style: italic;
+    font-size: 0.7em;
+    text-align: right;
+    margin-left: 30%;
+}
+
+/* - QR SCAN PAGE----------------------------------------- */
+
+    .accordion {
+      background-color: #f3e8df;
+      border: 1px solid #d4c1b0;
+      border-radius: 8px;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      cursor: pointer;
+    }
+    /* .panel {
+      display: none;
+      padding: 1rem;
+      background-color: #fff;
+      border-left: 4px solid #a34c1e;
+      border-radius: 0 0 8px 8px;
+      margin-bottom: 1.5rem;
+    } */
+    .active, .accordion:hover {
+        color: orangered;
+      background-color: #e8d3c0;
+    }
+    a {
+      color: #a34c1e;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+/* - NAV BAR ------------------------------------------- */
+
+.menu {
+    font-family: 'Alice', serif;
+    font-size: 90%;
+    color: #7B2D26;
+    list-style-type: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: auto;
+    display: inline-flex;
+    line-height: 50px;
+    margin-right: unset;
+    text-align: center;
+    align-items: center;
+}
+  
+.menu li {
+    float: left;
+    margin-right: 15px;
+    font-family: 'Alice', serif;
+    font-size: 90%;
+    color: #7B2D26;
+}
+
+.menu a {
+    text-decoration: none;
+    color: inherit;
+    font-family: 'Alice', serif;
+    font-size: 90%;
+    color: #7B2D26;
+}
+
+.active {
+    font-weight: bold;
+    border-bottom: 1px solid;
+}
+
+.navbar .navbar-nav {
+    float: none;
+    vertical-align: top;
+    text-align: center;
+}
+  
+.navbar .navbar-collapse {
+    text-align: right;
+}
+
+
+/* - FOOTER ------------------------------------------- */
+footer {
+    color:#7B2D26;
+    padding:  14px;
+    text-align: center;
+}
+
+.copyright-notice {
+    text-align: left;
+    margin: auto;
+}
+  
+.social-networks { /* aligned center on extra small viewports only */
+    text-align: center;
+    margin: auto;
+    
+}
+  
+.social-networks li a {
+    color:saddlebrown;
+    font-size: 1.2rem;
+    letter-spacing: 1.2rem;
+}
+
+
+/* - MEDIA QUERIES (BOOTSTRAP BREAKPOINTS)  ----------- */
+
+/* Extra small devices (portrait phones, less than 576px) */
+/*  - Bootstrap default - no media queries required */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    .lead {
+        font-size: 1.05rem;
+    }
+    
+    #further-info {
+        font-size: 0.7em;
+        text-align: right;
+        margin-left: 40%;
+    }
+
+    .social-networks {
+        text-align: right;
+        margin: auto;
+    }
+
+}
+  
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .lead {
+        font-size: 1.1rem;
+    }
+    
+    #further-info {
+        font-size: 0.8em;
+        text-align: right;
+        margin-left: 50%;
+    }
+
+}
+  
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .lead {
+        font-size: 1.15rem;
+    }
+
+    #further-info {
+        font-size: 0.8em;
+        text-align: right;
+        margin-left: 60%;
+    }
+}
+  
+ /* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    .lead {
+        font-size: 1.2rem;
+    }
+
+    #further-info {
+        font-size: 0.8em;
+        text-align: right;
+        margin-left: 70%;
+    }
+}
